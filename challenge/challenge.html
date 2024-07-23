@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Riddle Web</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to The Riddle Web</h1>
-    <p>To begin your journey, seek the page where "beginnings" dwell.</p>
-    <p>Hint: It's a synonym for "genesis".</p>
+    <div class="container fade-in">
+        <h1>The Riddle Web</h1>
+        <p>Welcome to the first challenge.</p>
+        <p class="hint">Hint: The answer is always a single word.</p>
+        <input type="text" id="answer" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
