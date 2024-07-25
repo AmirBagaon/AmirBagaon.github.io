@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
+    text-align: right;
+    direction: rtl;
 }
 
 .container {
@@ -24,14 +25,33 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+.highlight {
+    color: #ff4500;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+    animation: pulsate 1.5s infinite alternate;
+    transition: all 0.3s ease;
+}
+
+.highlight:hover {
+    color: #ff6347;
+    text-shadow: 0 0 15px #ff6347, 0 0 25px #ff6347;
+    transform: scale(1.1);
+}
+
+@keyframes pulsate {
+    from {
+        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+    }
+    to {
+        text-shadow: 0 0 15px #ff4500, 0 0 25px #ff4500, 0 0 30px #ff4500;
+    }
+}
+
 p {
     font-size: 1.2em;
     margin-bottom: 1em;
-}
-
-.hint {
-    color: #8892b0;
-    font-style: italic;
 }
 
 input[type="text"] {
@@ -44,6 +64,7 @@ input[type="text"] {
     width: 100%;
     max-width: 300px;
     margin-top: 20px;
+    text-align: right;
 }
 
 button {
@@ -54,11 +75,15 @@ button {
     font-size: 1em;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 button:hover {
     background-color: #e6c200;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 @keyframes fadeIn {
@@ -69,3 +94,37 @@ button:hover {
 .fade-in {
     animation: fadeIn 1s ease-in;
 }
+
+/* Add this to your existing CSS */
+
+.level-indicator {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffd700;
+    color: #0a192f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Modify the existing body style to accommodate the level indicator */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0a192f;
+    color: #e6f1ff;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh; /* Changed from height to min-height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    direction: rtl;
+}
+
+/* The rest of your CSS remains the same */

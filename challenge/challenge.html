@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Riddle Web</title>
+    <title>אתגר החידות</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="level-indicator">Main Page</div>
     <div class="container fade-in">
-        <h1>אתגר החופש הגדול</h1>
-        <p>ברוכים הבאים לחידה הראשונה</p>
-        <p class="hint">Hint: The answer is always a single word.</p>
-        <input type="text" id="answer" placeholder="Enter your answer">
-        <button onclick="checkAnswer()">Submit</button>
+        <h1>ברוכים הבאים ל<span class="highlight">אתגר</span>!</h1>
+        <p>
+            האתגר מורכב ממספר חידות דפדפן. כל  חידה מכילה בתוכה רמז לגבי הכתובת של הדף הבא.
+        </p>
+        <p>
+            כדי לפתור, יש לכתוב את התשובה במקום המיועד לכך וללחוץ submit.
+            התשובות הן באנגלית בלבד.
+        </p>
+        <p>
+            תשובה נכונה תוביל לשלב הבא, ותשובה לא נכונה תוביל לדף בו כתוב 404.
+            במקרה של טעות, אפשר לחזור אחורה בדפדפן ולנסות לפתור שוב.
+        </p>
+        <p>כדי להתחיל את המסע, כתבו level1 ולחצו submit.</p>
+        <input type="text" id="answerInput" placeholder="הכנס את התשובה שלך כאן">
+        <button onclick="navigateToAnswer()">Submit</button>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
