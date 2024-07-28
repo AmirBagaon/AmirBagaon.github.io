@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Guttman Stam';
+    src: url('fonts/GuttmanStam-Regular.woff2') format('woff2'),
+         url('fonts/GuttmanStam-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Guttman Stam', 'Courier New', monospace;
     background-color: #0a192f;
     color: #e6f1ff;
     line-height: 1.6;
@@ -130,8 +138,8 @@ body .level-indicator {
 }
 
 .challenge-image {
-    width: 300px; /* or any other value */
-    height: 300px; /* or any other value */
+    width: 150px; /* smaller value */
+    height: 150px; /* smaller value */
     object-fit: contain; /* This ensures the image isn't distorted */
     display: block;
     margin: 0 auto;
@@ -167,6 +175,12 @@ body .level-indicator {
     border-radius: 0 0 50% 50%;
 }
 
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
 /* Torah quote style */
 .torah-quote {
     font-size: 1.5em;
@@ -175,10 +189,4 @@ body .level-indicator {
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .container {
-        max-width: 95%;
-    }
 }
