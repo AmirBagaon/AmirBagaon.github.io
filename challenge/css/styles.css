@@ -138,8 +138,8 @@ body .level-indicator {
 }
 
 .challenge-image {
-    width: 150px; /* smaller value */
-    height: 150px; /* smaller value */
+    width: 300px; /* smaller value */
+    height: 300px; /* smaller value */
     object-fit: contain; /* This ensures the image isn't distorted */
     display: block;
     margin: 0 auto;
