@@ -111,3 +111,74 @@ body .level-indicator {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+.hidden-text {
+    color: transparent;
+    user-select: all;
+    cursor: default;
+}
+
+.hidden-text::selection {
+    color: #e6f1ff; /* This should match your text color */
+    background-color: #0a192f; /* This should match your background color */
+}
+
+.image-container {
+    margin-bottom: 20px;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.challenge-image {
+    width: 300px; /* or any other value */
+    height: 300px; /* or any other value */
+    object-fit: contain; /* This ensures the image isn't distorted */
+    display: block;
+    margin: 0 auto;
+}
+
+.bridge-text {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffd700; /* Golden color */
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.bridge-text::before,
+.bridge-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #ffd700;
+}
+
+.bridge-text::before {
+    top: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.bridge-text::after {
+    bottom: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+/* Torah quote style */
+.torah-quote {
+    font-size: 1.5em;
+    color: #ffd700; /* Golden color */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+}
