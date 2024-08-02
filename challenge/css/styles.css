@@ -190,3 +190,60 @@ body .level-indicator {
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+.wheel-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#spinButton {
+    background-color: #ffd700;
+    color: #0a192f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#spinButton:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sequence-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sequence-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-mark {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.arrow {
+    font-size: 2em;
+    margin: 0 10px;
+    color: #e6f1ff;
+}
+
+.sequence-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+}

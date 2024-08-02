@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 2</title>
+    <title>Level 5</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="level-indicator">Level 2</div>
+    <div class="level-indicator">Level 5</div>
     <div class="container fade-in">
-        <div class="image-container">
-            <img src="images/trafficlight.png" class="challenge-image">
+        <div class="wheel-container">
+            <canvas id="wheelCanvas" width="500" height="500"></canvas>
+            <button id="spinButton">Spin the Wheel</button>
         </div>
         <input type="text" id="answerInput" placeholder="הכנס את התשובה שלך כאן">
         <button onclick="navigateToAnswer()">Submit</button>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/wheel.js"></script>
 </body>
 </html>
