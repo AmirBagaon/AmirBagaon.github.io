@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 8</title>
+    <title>Level 10</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="level-indicator">Level 8</div>
+    <div class="level-indicator">Level 10</div>
     <div class="container fade-in">
-        <div class="hpotter-container">
-            <img src="images/hpotter.png" class="hpotter-image">
+        <div class="image-container">
+            <img src="images/ambigram.png" alt="Image" class="rotatable-image" id="rotatableImage">
+            <button id="rotateButton">Rotate</button>
         </div>
         <input type="text" id="answerInput" placeholder="הכנס את התשובה שלך כאן">
         <button onclick="navigateToAnswer()">Submit</button>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/rotate.js"></script>
 </body>
 </html>
