@@ -279,3 +279,17 @@ body .level-indicator {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+.headline {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffd700; /* Golden color */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+audio {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
