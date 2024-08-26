@@ -293,3 +293,65 @@ audio {
     display: block;
     width: 100%;
 }
+
+
+.congratulations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.congratulations-text {
+    font-size: 4em;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+    animation: pulsate 1.5s infinite alternate;
+}
+
+.congratulations-message {
+    font-size: 1.5em;
+    color: #e6f1ff;
+    margin-top: 20px;
+}
+
+@keyframes pulsate {
+    from {
+        text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+    }
+    to {
+        text-shadow: 0 0 15px #ffd700, 0 0 25px #ffd700, 0 0 30px #ffd700;
+    }
+}
+
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ffd700;
+    animation: firework 2s infinite;
+}
+
+.firework:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.firework:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes firework {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
